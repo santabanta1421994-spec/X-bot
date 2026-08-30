@@ -1,0 +1,9 @@
+{
+  "name": "x-bot",
+  "version": "1.0.0",
+  "description": "X Automation Bot",
+  "main": "bot.js",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}
