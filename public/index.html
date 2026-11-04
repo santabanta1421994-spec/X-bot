@@ -1,31 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>X Administrator</title>
-<link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d17">
+  <title>X Administrator Control Center</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    input, select, textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #39465b;
+      border-radius: 7px;
+      background: #0d1726;
+      color: white;
+    }
+    button {
+      padding: 11px 16px;
+      margin: 5px;
+      border: 0;
+      border-radius: 7px;
+      background: #2459a6;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover { background: #3475ce; }
+    .panel p { overflow-wrap: anywhere; }
+    nav button { width: 100%; margin: 0; }
+  </style>
 </head>
 <body>
-<aside class="sidebar">
-<div class="brand">𝕏 ADMIN <small>CONTROL CENTER</small></div>
-<nav>
-<button onclick="showPage('overview')">Overview</button>
-<button onclick="showPage('clients')">Clients</button>
-<button onclick="showPage('licenses')">Licenses</button>
-<button onclick="showPage('devices')">Devices</button>
-<button onclick="showPage('accounts')">X Accounts</button>
-<button onclick="showPage('composer')">Post Composer</button>
-<button onclick="showPage('schedule')">Posts & Schedule</button>
-<button onclick="showPage('ads')">Ads Campaigns</button>
-<button onclick="showPage('logs')">Activity Logs</button>
-<button onclick="showPage('settings')">Administrator Settings</button>
-</nav>
-</aside>
-<main>
-<header><h1 id="pageTitle">Overview</h1><span>● SYSTEM ONLINE</span></header>
-<div id="content"></div>
-</main>
-<script src="/app.js"></script>
+  <aside class="sidebar">
+    <div class="brand">𝕏 ADMIN
+      <small>CONTROL CENTER</small>
+    </div>
+    <nav>
+      <p>Loading administrator panel...</p>
+    </nav>
+  </aside>
+
+  <main>
+    <header>
+      <h1 id="pageTitle">Administrator Login</h1>
+      <span>● X ADMIN</span>
+    </header>
+    <div id="content">
+      <div class="panel">Connecting to Firebase...</div>
+    </div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
 </body>
-</html>1
+</html>
